@@ -50,9 +50,9 @@ async function activate(externalProvider: ExternalProvider) {
   const getData = (timeout: number = 5000) => {
     return new Promise(async (resolve: (val: any[]) => void, reject) => {
       try {
-        setTimeout(() => {
-          reject('Failed to activate ethers: timeout')
-        }, timeout)
+        // setTimeout(() => {
+        //   reject('Failed to activate ethers: timeout')
+        // }, timeout)
         _network = await _provider.getNetwork()
         _address = await _signer.getAddress()
         _balance = await _signer.getBalance()
