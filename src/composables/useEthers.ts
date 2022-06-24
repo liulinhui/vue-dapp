@@ -35,7 +35,7 @@ async function activate(externalProvider: ExternalProvider) {
   //   }, 2000)
   // })
 
-  const _provider = new Web3Provider(externalProvider)
+  const _provider = new Web3Provider(externalProvider, 'any')
   const _signer = _provider.getSigner()
 
   /**
